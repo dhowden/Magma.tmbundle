@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>for $1 do
+	${2:/* TODO: implement */}
+end for;</string>
+	<key>name</key>
+	<string>For Statement</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>tabTrigger</key>
+	<string>for</string>
+	<key>uuid</key>
+	<string>3E59B092-2DF1-43FC-AD8B-1183C9DA4967</string>
+</dict>
+</plist>

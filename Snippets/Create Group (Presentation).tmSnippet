@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:G}&lt;$2&gt; := Group&lt;$2 | $3&gt;;
+$4</string>
+	<key>name</key>
+	<string>Create Group (Presentation)</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>tabTrigger</key>
+	<string>cgp</string>
+	<key>uuid</key>
+	<string>0C3BFD2E-9856-46EE-A00A-76637A8C0D55</string>
+</dict>
+</plist>

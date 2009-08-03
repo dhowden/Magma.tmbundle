@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Miscellaneous</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>settings</key>
+	<dict>
+		<key>decreaseIndentPattern</key>
+		<string>^\s*((end (for|if|procedure|function|case))|else|elif|until)\b.*</string>
+		<key>increaseIndentPattern</key>
+		<string>^\s*(function|procedure|if|for|while|elif|else|case|when|repeat).*$|^\s*\b([A-Za-z_][A-Za-z0-9_]*)\b\s*:=\s*\b(function|procedure)\b.*$</string>
+	</dict>
+	<key>uuid</key>
+	<string>E4DD6DA3-25CE-4F14-8054-EFE7BC91EDB4</string>
+</dict>
+</plist>

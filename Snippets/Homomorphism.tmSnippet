@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:h} := hom&lt; ${2:G}-&gt;${3:H} | $4 &gt;;</string>
+	<key>name</key>
+	<string>Homomorphism</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>tabTrigger</key>
+	<string>hom</string>
+	<key>uuid</key>
+	<string>73CD90ED-BEDC-4679-8695-BA1180EF318E</string>
+</dict>
+</plist>

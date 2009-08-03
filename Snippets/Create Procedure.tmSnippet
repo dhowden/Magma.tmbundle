@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>procedure ${1:procedure_name}(${2:params})
+	${3:/* TODO: implement $1 */}
+end procedure;</string>
+	<key>name</key>
+	<string>Create Procedure</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>tabTrigger</key>
+	<string>proc</string>
+	<key>uuid</key>
+	<string>C705327E-24A7-4039-BFD0-9A822BDC23BA</string>
+</dict>
+</plist>

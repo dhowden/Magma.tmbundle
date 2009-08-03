@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>intrinsic ${1:function_name}(${2:params})
+{$3}	
+	${4:/* TODO: implement $1 */}
+end intrinsic;</string>
+	<key>name</key>
+	<string>Create Intrinsic</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>tabTrigger</key>
+	<string>int</string>
+	<key>uuid</key>
+	<string>CE32456F-4EEF-45B5-9783-AFD4AE2DE70E</string>
+</dict>
+</plist>

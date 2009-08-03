@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>function ${1:function_name}(${2:params})
+	${3:/* TODO: implement $1 */}
+end function;</string>
+	<key>name</key>
+	<string>Create Function</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>tabTrigger</key>
+	<string>fun</string>
+	<key>uuid</key>
+	<string>C7AF5EF4-2EB5-422A-AB47-331FB97728A9</string>
+</dict>
+</plist>

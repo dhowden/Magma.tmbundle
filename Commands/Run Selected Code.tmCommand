@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+require ENV["TM_SUPPORT_PATH"] + "/lib/tm/process"
+require ENV["TM_SUPPORT_PATH"] + "/lib/tm/htmloutput"
+require ENV["TM_SUPPORT_PATH"] + "/lib/tm/save_current_document"
+require ENV["TM_SUPPORT_PATH"] + "/lib/tm/require_cmd"
+
+TextMate.require_cmd("kpsewhich")
+
+magma = "/usr/local/bin/magma"
+TextMate::HTMLOutput.show(:title =&gt; "Running “#{ENV["TM_DISPLAYNAME"]}”…", :sub_title =&gt; "Please wait…") do |io|
+  TextMate::Process.run(magma, :input =&gt; ENV["TM_SELECTED_TEXT"]) do |line|
+	io &lt;&lt; line
+  end
+end
+::Process.exit($?.exitstatus)</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>@R</string>
+	<key>name</key>
+	<string>Run Selected Code</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>magma.source</string>
+	<key>uuid</key>
+	<string>1978E507-5534-44E4-8A50-6A3A124190D8</string>
+</dict>
+</plist>
