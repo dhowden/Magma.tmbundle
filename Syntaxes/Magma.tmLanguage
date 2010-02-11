@@ -141,7 +141,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(print|hom|quo|map|pmap|sub|freeze|assert|local|exists|forall|require|requirerange|requirege|import|assigned|load|save|restore|quit|iload|printf|fprintf|exit|read|readi|time|forward|error|clear|vprint|vprintf|vtime|func)\b</string>
+			<string>\b(print|hom|quo|map|pmap|sub|freeze|rec|recformat|assert|local|exists|forall|require|requirerange|requirege|import|assigned|load|save|restore|quit|iload|printf|fprintf|exit|read|readi|time|forward|error|clear|vprint|vprintf|vtime|func)\b</string>
 			<key>name</key>
 			<string>support.function.statement</string>
 		</dict>
@@ -153,7 +153,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(by|to|eq|neq|not|lt|gt|le|ge|cmpeq|cmpne|mod|is|(\&amp;)?or|xor|(\&amp;)?and|in|notin|delete|div|(\&amp;)?cat|(\&amp;)?join|subset|notsubset|(\&amp;)?meet|diff|sdiff|ne)\b|((\&amp;)?\*|\^|(\&amp;)?\+|\-|#|\||&lt;|&gt;|:=|@|@@)</string>
+			<string>\b(by|to|eq|neq|not|lt|gt|le|ge|cmpeq|cmpne|mod|is|(\&amp;)?or|xor|(\&amp;)?and|in|notin|delete|div|(\&amp;)?cat|(\&amp;)?join|subset|notsubset|(\&amp;)?meet|diff|sdiff|ne)\b|((\&amp;)?\*|\^|(\&amp;)?\+|\-|#|\||&lt;|&gt;|:=|@|@@|:)</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
