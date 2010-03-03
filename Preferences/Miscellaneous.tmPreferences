@@ -9,7 +9,7 @@
 	<key>settings</key>
 	<dict>
 		<key>decreaseIndentPattern</key>
-		<string>^\s*((end (for|if|procedure|function|case))|else|elif|until)\b.*</string>
+		<string>^\s*((end (for|if|procedure|function|case|while))|else|elif|until)\b.*</string>
 		<key>increaseIndentPattern</key>
 		<string>^\s*(function|procedure|if|for|while|elif|else|case|when|repeat).*$|^\s*\b([A-Za-z_][A-Za-z0-9_]*)\b\s*:=\s*\b(function|procedure)\b.*$</string>
 	</dict>
