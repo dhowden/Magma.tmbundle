@@ -70,78 +70,8 @@
 			</array>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>\b(intrinsic)\b\s*([A-Za-z_][A-Za-z0-9_]*)\b(\(((.|\n)*?)\))(\s*\-\&gt;\s*.*)?(\n\s*(\{(.|\n)*?\}))?</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.function.magma</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.magma</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>variable</string>
-				</dict>
-				<key>6</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.operator</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>end intrinsic</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.function.magma</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>meta.function.intrinsic.magma</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>begin</key>
-					<string>^\{</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>comment.intrinsic</string>
-						</dict>
-					</dict>
-					<key>contentName</key>
-					<string>comment.intrinsic</string>
-					<key>end</key>
-					<string>\}$</string>
-					<key>endCaptures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>comment.intrinsic</string>
-						</dict>
-					</dict>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>$base</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
 			<key>match</key>
-			<string>\b(print|hom|quo|map|pmap|sub|freeze|rec|recformat|assert|local|exists|forall|require|requirerange|requirege|import|assigned|load|save|restore|quit|iload|printf|fprintf|exit|read|readi|time|forward|error|clear|vprint|vprintf|vtime|func)\b</string>
+			<string>\b(print|hom|quo|map|pmap|sub|freeze|rec|recformat|assert|local|exists|forall|require|requirerange|requirege|import|assigned|load|save|restore|quit|iload|printf|fprintf|exit|read|readi|time|forward|error|clear|vprint|vprintf|vtime|func|declare|verbose)\b</string>
 			<key>name</key>
 			<string>support.function.statement</string>
 		</dict>
@@ -165,7 +95,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>((\b(function|procedure)\b ([A-Za-z_][A-Za-z0-9_]*))|(\b([A-Za-z_][A-Za-z0-9_]*)\b\s*(:=)\s*\b(function|procedure)\b))\s*\(((.|\n)*)\)(\n\s*\{*.\})?</string>
+			<string>((\b(function|procedure)\b ([A-Za-z_][A-Za-z0-9_]*))|(\b([A-Za-z_][A-Za-z0-9_]*)\b\s*(:=)\s*\b(function|procedure)\b))</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>12</key>
@@ -218,6 +148,76 @@
 			<string>meta.function.magma</string>
 			<key>patterns</key>
 			<array>
+				<dict>
+					<key>include</key>
+					<string>$base</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\b(intrinsic)\b\s*([A-Za-z_][A-Za-z0-9_]*)\b</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.function.magma</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.magma</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>variable</string>
+				</dict>
+				<key>6</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>end intrinsic</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.function.magma</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.function.intrinsic.magma</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>^\s*\{</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>comment.intrinsic</string>
+						</dict>
+					</dict>
+					<key>contentName</key>
+					<string>comment.intrinsic</string>
+					<key>end</key>
+					<string>\}</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>comment.intrinsic</string>
+						</dict>
+					</dict>
+				</dict>
 				<dict>
 					<key>include</key>
 					<string>$base</string>
