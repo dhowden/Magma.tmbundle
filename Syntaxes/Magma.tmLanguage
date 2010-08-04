@@ -12,6 +12,8 @@
 	<string>/\*\*|\{\s*$|^\s*(function|procedure|intrinsic|if|for|while|case|repeat)\b|^\s*\b([A-Za-z_][A-Za-z0-9_]*)\b\s*:=\s*\b(function|procedure)\b</string>
 	<key>foldingStopMarker</key>
 	<string>\*\*/|^\s*\}|^\s*end (function|procedure|intrinsic|if|for|while|case);$|^\s*until\b</string>
+	<key>keyEquivalent</key>
+	<string>^@M</string>
 	<key>name</key>
 	<string>Magma</string>
 	<key>patterns</key>
@@ -77,7 +79,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(\[(\*|)|(\*|)\]|\{(@|!|\*|)|(@|!|\*|)\})</string>
+			<string>(\[(\*|)|(\*|)\]|\{(@|!|\*|)|(@|!|\*|)\}|GrpPC|GrpGPC|GrpAB|GrpFP|SeqEnum|RngIntElt|ModFld|Rec|RecFrmt|SetIndx|AlgMatElt|Tup)</string>
 			<key>name</key>
 			<string>storage.type</string>
 		</dict>
