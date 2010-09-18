@@ -73,13 +73,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(print|hom|quo|map|pmap|sub|freeze|rec|recformat|assert|local|exists|forall|require|requirerange|requirege|import|assigned|load|save|restore|quit|iload|printf|fprintf|exit|read|readi|time|forward|error|clear|vprint|vprintf|vtime|func|declare|verbose)\b</string>
+			<string>\b(print|hom|quo|map|pmap|sub|freeze|rec|recformat|car|assert|local|exists|forall|require|requirerange|requirege|import|assigned|load|save|restore|quit|iload|printf|fprintf|exit|read|readi|time|forward|error|clear|vprint|vprintf|vtime|func|declare|verbose)\b</string>
 			<key>name</key>
 			<string>support.function.statement</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(\[(\*|)|(\*|)\]|\{(@|!|\*|)|(@|!|\*|)\}|GrpPC|GrpGPC|GrpAB|GrpFP|SeqEnum|RngIntElt|ModFld|Rec|RecFrmt|SetIndx|AlgMatElt|Tup)</string>
+			<string>(\[(\*|)|(\*|)\]|\{(@|!|\*|)|(@|!|\*|)\}|GrpAuto(Elt)?|GrpPC(Elt)?|GrpGPC(Elt)?|GrpAB(Elt)?|GrpMat(Elt)?|GrpSLP(Elt)?|GrpFP(Elt)?|SeqEnum|RngIntElt|ModFld(Elt)?|Rec|RecFrmt|SetIndx|AlgMat(Elt)?|Tup|BoolElt)</string>
 			<key>name</key>
 			<string>storage.type</string>
 		</dict>
