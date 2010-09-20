@@ -73,6 +73,18 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>~([A-Za-z_][A-Za-z0-9_]*)\b</string>
+			<key>name</key>
+			<string>variable.reference</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>`([A-Za-z_][A-Za-z0-9_]*)\b</string>
+			<key>name</key>
+			<string>variable.attribute</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\b(print|hom|quo|map|pmap|sub|freeze|rec|recformat|car|assert|local|exists|forall|require|requirerange|requirege|import|assigned|load|save|restore|quit|iload|printf|fprintf|exit|read|readi|time|forward|error|clear|vprint|vprintf|vtime|func|declare|verbose)\b</string>
 			<key>name</key>
 			<string>support.function.statement</string>
