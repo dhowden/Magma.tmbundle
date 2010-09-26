@@ -9,7 +9,7 @@
 	<key>scope</key>
 	<string>source.magma</string>
 	<key>tabTrigger</key>
-	<string>quo</string>
+	<string>q</string>
 	<key>uuid</key>
 	<string>55C0821A-C390-41DF-BBF5-F53DB745D05F</string>
 </dict>

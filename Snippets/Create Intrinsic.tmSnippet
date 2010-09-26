@@ -12,7 +12,7 @@ end intrinsic;</string>
 	<key>scope</key>
 	<string>source.magma</string>
 	<key>tabTrigger</key>
-	<string>int</string>
+	<string>intr</string>
 	<key>uuid</key>
 	<string>CE32456F-4EEF-45B5-9783-AFD4AE2DE70E</string>
 </dict>

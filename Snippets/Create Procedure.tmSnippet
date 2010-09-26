@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>procedure ${1:procedure_name}(${2:params})
+	<string>${1:procedure_name} := procedure(${2:params})
 	${3:/* TODO: implement $1 */}
 end procedure;</string>
 	<key>name</key>
