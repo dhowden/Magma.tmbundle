@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/python
+
+import os
+from os import environ as env
+import re
+
+line = env['TM_CURRENT_LINE']
+dir = env['TM_DIRECTORY']
+
+m = re.match("(load|import)\s*\"(.*)\"", line)
+
+if m:
+    os.system("open txmt://open?url=file://%s/%s" % (dir, m.group(2)))</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@D</string>
+	<key>name</key>
+	<string>Open file</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>uuid</key>
+	<string>307423CA-4504-4BB0-BB9E-95EF2133818C</string>
+</dict>
+</plist>

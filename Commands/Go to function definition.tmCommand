@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>LINE=`sed -n '/'"$TM_CURRENT_WORD"' :=/=' "$TM_FILEPATH"`
+if [[ "$LINE" -gt 0 ]]; then
+	open txmt://open?line="$LINE"
+	exit 0
+fi
+echo 'Fail'</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@G</string>
+	<key>name</key>
+	<string>Go to function definition</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>uuid</key>
+	<string>6B53E759-9D4B-4AB4-9645-3A8B11BC6108</string>
+</dict>
+</plist>
