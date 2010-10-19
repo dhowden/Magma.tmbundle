@@ -5,19 +5,8 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/python
-
-import os
-from os import environ as env
-import re
-
-line = env['TM_CURRENT_LINE']
-dir = env['TM_DIRECTORY']
-
-m = re.match("(load|import)\s*\"(.*)\"", line)
-
-if m:
-    os.system("open txmt://open?url=file://%s/%s" % (dir, m.group(2)))</string>
+	<string>FILE=`echo "$TM_CURRENT_LINE" | awk '{print $2}' | sed -n -e 's_"\([^\"]*\)"\s*;_\1_p'`
+open txmt://open?url=file://"$TM_DIRECTORY"/"$FILE" &amp;&gt;/dev/null &amp;</string>
 	<key>fallbackInput</key>
 	<string>line</string>
 	<key>input</key>
@@ -29,7 +18,7 @@ if m:
 	<key>output</key>
 	<string>showAsTooltip</string>
 	<key>scope</key>
-	<string>source.magma</string>
+	<string>meta.load.magma</string>
 	<key>uuid</key>
 	<string>307423CA-4504-4BB0-BB9E-95EF2133818C</string>
 </dict>

@@ -5,16 +5,54 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>LINE=`sed -n '/'"$TM_CURRENT_WORD"' :=/=' "$TM_FILEPATH"`
-if [[ "$LINE" -gt 0 ]]; then
-	open txmt://open?line="$LINE"
-	exit 0
-fi
-echo 'Fail'</string>
+	<string># lookup_function
+# Paramters:
+#   function_name
+#   file_name
+function lookup_function {
+	local LINE=`sed -n '/'"$1"' :=/=' "$2"`
+	if [[ "$LINE" -gt 0 ]]; then
+		open txmt://open?url=file://"$2"\&amp;line="$LINE" &amp;&gt;/dev/null &amp;
+		exit 0
+	fi
+}
+
+# look in the the current file
+lookup_function "$TM_CURRENT_WORD" "$TM_FILEPATH"
+
+# 
+# follow_load_statments
+# 
+# Parameters:
+#   word
+#   file_array
+function follow_load_statements {
+	local SEARCH_FILES=$2
+    for search_file in ${SEARCH_FILES[@]}
+    do
+        local FILES=(`grep '^load\&gt;' "$search_file" | awk '{print $2}' | sed -n -e 's_"\([^\"]*\)"\s*;_\1_p'`)
+
+        for file in ${FILES[@]}
+        do
+            lookup_function $1 "$TM_DIRECTORY"'/'"$file"
+        done
+        
+        follow_load_statements "$FILES"
+    done
+}
+
+SEARCH_FILES=( "$TM_FILEPATH" )
+follow_load_statements "$TM_CURRENT_WORD" "$SEARCH_FILES"
+
+
+# Did not find the function in the current file, so check the loaded files.
+echo 'Could not find '"$TM_CURRENT_WORD"' in the current file'
+
+</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
-	<string>@G</string>
+	<string>@d</string>
 	<key>name</key>
 	<string>Go to function definition</string>
 	<key>output</key>
