@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>rec &lt; ${1:/* format */} | ${2:/* variables */} &gt;;${3}</string>
+	<key>name</key>
+	<string>Record</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>tabTrigger</key>
+	<string>rec</string>
+	<key>uuid</key>
+	<string>7299547E-E3A7-4DD8-818D-E83776FC1567</string>
+</dict>
+</plist>
