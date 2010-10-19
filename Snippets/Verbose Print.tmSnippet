@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>vprint ${1:/* verbose flag */} : "$2";</string>
+	<key>name</key>
+	<string>Verbose Print</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>tabTrigger</key>
+	<string>vp</string>
+	<key>uuid</key>
+	<string>D3C1A6F6-CECF-45F8-8533-12939799A9C5</string>
+</dict>
+</plist>
