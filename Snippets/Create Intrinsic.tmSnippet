@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>intrinsic ${1:function_name}(${2:params})
+	<string>intrinsic ${1:function_name} ( ${2:params} )
 {$3}	
 	${4:/* TODO: implement $1 */}
 end intrinsic;</string>
