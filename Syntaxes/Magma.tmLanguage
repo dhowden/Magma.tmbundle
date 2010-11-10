@@ -172,6 +172,66 @@
 			</array>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>\b(import)\s+("[^"]+")\s*(:)\s*</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.function.statement</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>string.quoted.double.magma</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>;</string>
+			<key>name</key>
+			<string>meta.support.import</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>[A-Za-z_][A-Za-z0-9_]*</string>
+					<key>name</key>
+					<string>entity.name.function.import</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\b(forward)\s+</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.function.statement</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>;</string>
+			<key>name</key>
+			<string>meta.support.forward</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>[A-Za-z_][A-Za-z0-9_]*</string>
+					<key>name</key>
+					<string>entity.name.function.forward</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
