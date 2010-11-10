@@ -233,7 +233,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(by|to|eq|not|lt|gt|le|ge|cmpeq|cmpne|mod|is|(\&amp;)?or|xor|(\&amp;)?and|in|notin|delete|div|(\&amp;)?cat|(\&amp;)?join|subset|notsubset|(\&amp;)?meet|diff|sdiff|ne)\b|((\&amp;)?\*|\^|(\&amp;)?\+|\-|#|\||&lt;|&gt;|:=|@|@@|:|\.\.)</string>
+			<string>\b(by|to|eq|not|lt|gt|le|ge|cmpeq|cmpne|mod|is|or|xor|(\&amp;)?and|in|notin|delete|div|cat|join|subset|notsubset|meet|diff|sdiff|ne)\b|((\&amp;)?\*|\^|(\&amp;)?\+|\-|#|\||&lt;|&gt;|:=|@|@@|:|\.\.)|\&amp;(or|and|cat|join|meet)\b</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
