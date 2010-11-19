@@ -237,7 +237,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>support.function.statement</string>
+					<string>keyword.function.statement</string>
 				</dict>
 				<key>3</key>
 				<dict>
@@ -249,6 +249,25 @@
 			<string>\b(vprint(f)?)\s+([A-Za-z][A-Za-z0-9]*)</string>
 			<key>name</key>
 			<string>meta.support.function.statement.vprint</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.function.statement</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.type.verbose.flag</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b(vtime)\s+([A-Za-z][A-Za-z0-9]*)</string>
+			<key>name</key>
+			<string>meta.support.function.statement.vtime</string>
 		</dict>
 		<dict>
 			<key>match</key>
