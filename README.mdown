@@ -1,0 +1,8 @@
+MAGMA Textmate Bundle
+=====================
+
+Download the latest version (using the "Downloads" button), then simply rename the magma-tmbundle folder to Magma.tmbundle and double click it.  It will open Textmate and install the bundle.
+
+The bundle is updated quite regularly, so be sure to check back for any updates.
+
+Any comments/suggestions most welcome.
