@@ -127,13 +127,13 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(declare)\s*(verbose)\s*([A-Za-z_][A-Za-z0-9_]*)</string>
+			<string>\b(declare)\s+(verbose)\s*([A-Za-z_][A-Za-z0-9_]*)</string>
 			<key>name</key>
 			<string>meta.support.declare.verbose</string>
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\b(declare)\s+(attributes)\s+([A-Za-z_][A-Za-z0-9_]*)\s+(:)\s+</string>
+			<string>\b(declare)\s+(attributes)\s+([A-Za-z_][A-Za-z0-9_]*)\s*(:)\s*</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
