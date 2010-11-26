@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>vtime ${1:/* verbose flag */} : $2;</string>
+	<string>vprint ${1:/* verbose flag */} : "$2";</string>
 	<key>name</key>
-	<string>Verbose Print</string>
+	<string>Verbose Time</string>
 	<key>scope</key>
 	<string>source.magma</string>
 	<key>tabTrigger</key>
-	<string>vt</string>
+	<string>vp</string>
 	<key>uuid</key>
-	<string>D3C1A6F6-CECF-45F8-8533-12939799A9C5</string>
+	<string>5D074D52-3241-4C10-AEA4-82DAFF87BF17</string>
 </dict>
 </plist>
