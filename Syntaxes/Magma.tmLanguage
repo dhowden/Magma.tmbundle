@@ -89,7 +89,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>support.function.statement</string>
+					<string>keyword.function.statement</string>
 				</dict>
 				<key>2</key>
 				<dict>
