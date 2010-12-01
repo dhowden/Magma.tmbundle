@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string># This command inserts any missing end statements at the caret position.
+# Based on the similar \end{} code for the Latex bundle.
+
+ruby -- "$TM_SUPPORT_PATH/bin/checknest.rb" '(if|for|while)' 'end (if|for|while);' 'end $1;' -n$TM_LINE_NUMBER</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>~@.</string>
+	<key>name</key>
+	<string>Close Block Statement</string>
+	<key>output</key>
+	<string>afterSelectedText</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>uuid</key>
+	<string>CA136E45-74F2-47B8-9518-D2730CAF9B22</string>
+</dict>
+</plist>
