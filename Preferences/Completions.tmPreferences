@@ -257,6 +257,8 @@
 			<string>AutomaticGroup</string>
 			<string>Automorphism</string>
 			<string>AutomorphismGroup</string>
+			<string>AutomorphismGroupPGroup</string>
+			<string>AutomorphismGroupPGroup2</string>
 			<string>AutomorphismGroupStabilizer</string>
 			<string>AutomorphismOmega</string>
 			<string>Automorphisms</string>
