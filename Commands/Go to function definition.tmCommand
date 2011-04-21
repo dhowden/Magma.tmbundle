@@ -10,7 +10,7 @@
 #   function_name
 #   file_name
 function lookup_function {
-	local LINE=`sed -n '/'"$1"' :=/=' "$2"`
+	local LINE=`sed -n '/'"$1"'\s*:=/=' "$2"`
 	if [[ "$LINE" -gt 0 ]]; then
 		open txmt://open?url=file://"$2"\&amp;line="$LINE" &amp;&gt;/dev/null &amp;
 		exit 0
@@ -41,8 +41,34 @@ function follow_load_statements {
     done
 }
 
+
 SEARCH_FILES=( "$TM_FILEPATH" )
 follow_load_statements "$TM_CURRENT_WORD" "$SEARCH_FILES"
+
+# 
+# follow_import_statments
+# 
+# Parameters:
+#   word
+#   file_array
+function follow_import_statements {
+	local SEARCH_FILES=$2
+    for search_file in ${SEARCH_FILES[@]}
+    do
+        local FILES=(`grep '^import\&gt;' "$search_file" | awk '{print $2}' | sed -n -e 's_"\([^\"]*\)"\s*:_\1_p'`)
+
+        for file in ${FILES[@]}
+        do
+            lookup_function $1 "$TM_DIRECTORY"'/'"$file"
+        done
+        
+        follow_import_statements "$FILES"
+    done
+}
+
+
+SEARCH_FILES=( "$TM_FILEPATH" )
+follow_import_statements "$TM_CURRENT_WORD" "$SEARCH_FILES"
 
 
 # Did not find the function in the current file, so check the loaded files.
