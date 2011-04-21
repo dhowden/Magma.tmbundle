@@ -71,7 +71,7 @@ SEARCH_FILES=( "$TM_FILEPATH" )
 follow_import_statements "$TM_CURRENT_WORD" "$SEARCH_FILES"
 
 
-# Did not find the function in the current file, so check the loaded files.
+# Did not find the function in the current file or loaded/imported files, notify user
 echo 'Could not find '"$TM_CURRENT_WORD"' in the current file'
 
 </string>
