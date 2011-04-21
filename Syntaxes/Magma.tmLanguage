@@ -622,16 +622,16 @@
     						((-?\d+)|\*(-?\d+\$)?)?              # minimum field width
     						(\.((-?\d+)|\*(-?\d+\$)?)?)?         # precision
     						(hh|h|ll|l|j|t|z|q|L|vh|vl|v|hv|hl)? # length modifier
-    						[diouxXDOUeEfFgGaACcSspn%]           # conversion type
+    						[moOh%]           # conversion type
     					</string>
 					<key>name</key>
-					<string>constant.other.placeholder.c</string>
+					<string>constant.other.placeholder.magma</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>%</string>
 					<key>name</key>
-					<string>invalid.illegal.placeholder.c</string>
+					<string>invalid.illegal.placeholder.magma</string>
 				</dict>
 			</array>
 		</dict>
