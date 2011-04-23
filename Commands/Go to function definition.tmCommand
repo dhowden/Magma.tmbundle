@@ -10,7 +10,7 @@
 #   function_name
 #   file_name
 function lookup_function {
-	local LINE=`sed -n '/'"$1"'\s*:=/=' "$2"`
+	local LINE=`sed -n '/'"$1"'[ \t\n]*:=/=' "$2"`
 	if [[ "$LINE" -gt 0 ]]; then
 		open txmt://open?url=file://"$2"\&amp;line="$LINE" &amp;&gt;/dev/null &amp;
 		exit 0
