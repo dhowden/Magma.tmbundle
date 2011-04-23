@@ -5,8 +5,10 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>FILE=`echo "$TM_CURRENT_LINE" | awk '{print $2}' | sed -n -e 's_"\([^\"]*\)"\s*;_\1_p'`
-open txmt://open?url=file://"$TM_DIRECTORY"/"$FILE" &amp;&gt;/dev/null &amp;</string>
+	<string>FILE=`echo "$TM_CURRENT_LINE" | awk '{print $2}' | sed -n -e 's_"\([^\"]*\)"[ \t\n]*;_\1_p'`
+open txmt://open?url=file://"$TM_DIRECTORY"/"$FILE" &amp;&gt;/dev/null &amp;
+
+echo 'File opened?'</string>
 	<key>fallbackInput</key>
 	<string>line</string>
 	<key>input</key>
@@ -18,7 +20,7 @@ open txmt://open?url=file://"$TM_DIRECTORY"/"$FILE" &amp;&gt;/dev/null &amp;</st
 	<key>output</key>
 	<string>showAsTooltip</string>
 	<key>scope</key>
-	<string>meta.load.magma</string>
+	<string>meta.load.magma, meta.support.import</string>
 	<key>uuid</key>
 	<string>307423CA-4504-4BB0-BB9E-95EF2133818C</string>
 </dict>
