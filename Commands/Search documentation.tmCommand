@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>open http://magma.maths.usyd.edu.au/magma/handbook/search?intrinsics=1\&amp;query="$TM_CURRENT_WORD" &amp;&gt;/dev/null &amp;
+exit 0
+
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@d</string>
+	<key>name</key>
+	<string>Search documentation</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>support.function.magma</string>
+	<key>uuid</key>
+	<string>7B3CC094-DD65-4B4E-A7C2-B168F2D371A8</string>
+</dict>
+</plist>
