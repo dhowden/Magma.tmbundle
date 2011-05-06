@@ -6,9 +6,7 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>FILE=`echo "$TM_CURRENT_LINE" | awk '{print $2}' | sed -n -e 's_"\([^\"]*\)"[ \t\n]*;_\1_p'`
-open txmt://open?url=file://"$TM_DIRECTORY"/"$FILE" &amp;&gt;/dev/null &amp;
-
-echo 'File opened?'</string>
+open txmt://open?url=file://"$TM_DIRECTORY"/"$FILE" &amp;&gt;/dev/null &amp;</string>
 	<key>fallbackInput</key>
 	<string>line</string>
 	<key>input</key>

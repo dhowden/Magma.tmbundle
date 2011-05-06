@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>repeat
+	${3:/* TODO: implement */}
+until $2;</string>
+	<key>name</key>
+	<string>Repeat Statement</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>tabTrigger</key>
+	<string>repeat</string>
+	<key>uuid</key>
+	<string>2B075CD7-837B-40A2-B667-6788B8A8E278</string>
+</dict>
+</plist>

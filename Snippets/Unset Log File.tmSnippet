@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>UnsetLogFile();</string>
+	<key>name</key>
+	<string>Unset Log File</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>tabTrigger</key>
+	<string>ulog</string>
+	<key>uuid</key>
+	<string>1EA1FFC9-D02E-476A-810B-A3F97B4AF3F2</string>
+</dict>
+</plist>

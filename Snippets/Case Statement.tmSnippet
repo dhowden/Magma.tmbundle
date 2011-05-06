@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>case $1 :
+	when $2 : ${3:/* TODO: implement */};
+	${4:else : ${5:/* TODO: implement */};}
+end case;</string>
+	<key>name</key>
+	<string>Case Statement</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>tabTrigger</key>
+	<string>case</string>
+	<key>uuid</key>
+	<string>0C9B3F6F-5B2E-4716-BB74-897A6E1FBF37</string>
+</dict>
+</plist>

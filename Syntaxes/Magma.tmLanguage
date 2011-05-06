@@ -396,7 +396,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(print|hom|quo|map|pmap|sub|freeze|rec|recformat|car|assert|local|exists|forall|require|requirerange|requirege|import|assigned|save|restore|quit|iload|printf|fprintf|exit|read|readi|time|forward|error|clear|vprint|vprintf|vtime|func|declare|attributes|verbose|eval)\b</string>
+			<string>\b(print|hom|quo|map|pmap|sub|freeze|rec|recformat|car|assert(|2|3)|local|exists|forall|require|requirerange|requirege|import|assigned|save|restore|quit|iload|printf|fprintf|exit|read|readi|time|forward|error|clear|vprint|vprintf|vtime|func|declare|attributes|verbose|eval)\b</string>
 			<key>name</key>
 			<string>keyword.function.statement</string>
 		</dict>
@@ -443,9 +443,40 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(end )?(if|then|elif|else|while|for|return|where|do|select|case|when|repeat|until|break|continue|try|catch)\b</string>
+			<string>\b(end )?(if|then|elif|else|while|for|return|where|do|select|when|repeat|until|break|continue|try|catch)\b</string>
 			<key>name</key>
 			<string>keyword.control</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\b(case)\b</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.magma</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>end case</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.magma</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.case.magma</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$base</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>begin</key>

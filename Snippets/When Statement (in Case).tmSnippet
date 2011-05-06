@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>
+when $1 : ${2:/* TODO: implement */};</string>
+	<key>keyEquivalent</key>
+	<string>@</string>
+	<key>name</key>
+	<string>When Statement (for Case)</string>
+	<key>scope</key>
+	<string>meta.case.magma</string>
+	<key>uuid</key>
+	<string>333F631D-75DA-4D5E-932A-E311E8367F27</string>
+</dict>
+</plist>
