@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>if $1 then ${2:/* TODO: implement */} end if;</string>
+	<key>name</key>
+	<string>If Statement (line)</string>
+	<key>scope</key>
+	<string>source.magma</string>
+	<key>tabTrigger</key>
+	<string>ifl</string>
+	<key>uuid</key>
+	<string>B272F525-27C4-4C34-8435-F03FD19607F4</string>
+</dict>
+</plist>
