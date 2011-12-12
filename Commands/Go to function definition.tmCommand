@@ -15,6 +15,14 @@ function lookup_function {
 		open txmt://open?url=file://"$2"\&amp;line="$LINE" &amp;&gt;/dev/null &amp;
 		exit 0
 	fi
+
+	# check to see if there is an intrinsic with this name
+	local LINE=`sed -n '/intrinsic '"$1"'/=' "$2"`
+	if [[ "$LINE" -gt 0 ]]; then
+		open txmt://open?url=file://"$2"\&amp;line="$LINE" &amp;&gt;/dev/null &amp;
+		exit 0
+	fi
+
 }
 
 # look in the the current file

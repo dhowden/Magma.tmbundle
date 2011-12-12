@@ -7,6 +7,7 @@
 		<string>m</string>
 		<string>magma</string>
 		<string>.magmarc</string>
+		<string>.magmarc-dev</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>/\*\*|\{\s*$|^\s*(function|procedure|intrinsic|if|for|while|case|repeat|try)\b|^\s*\b([A-Za-z_][A-Za-z0-9_]*)\b\s*:=\s*\b(function|procedure)\b</string>

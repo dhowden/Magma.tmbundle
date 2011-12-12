@@ -5,9 +5,9 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>open http://magma.maths.usyd.edu.au/magma/handbook/search?intrinsics=1\&amp;query="$TM_CURRENT_WORD" &amp;&gt;/dev/null &amp;
+	<string>. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+open http://magma.maths.usyd.edu.au/magma/handbook/search?intrinsics=1\&amp;query="$TM_CURRENT_WORD" &amp;&gt;/dev/null &amp;
 exit 0
-
 </string>
 	<key>input</key>
 	<string>none</string>
@@ -16,7 +16,7 @@ exit 0
 	<key>name</key>
 	<string>Search documentation</string>
 	<key>output</key>
-	<string>showAsTooltip</string>
+	<string>discard</string>
 	<key>scope</key>
 	<string>support.function.magma</string>
 	<key>uuid</key>
