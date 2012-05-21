@@ -397,7 +397,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(print|hom|quo|map|pmap|sub|freeze|rec|recformat|car|assert(|2|3)|local|exists|forall|require|requirerange|requirege|import|assigned|save|restore|quit|iload|printf|fprintf|exit|read|readi|time|forward|error|clear|vprint|vprintf|vtime|func|declare|attributes|verbose|eval)\b</string>
+			<string>\b(print|hom|quo|map|pmap|iso|sub|freeze|rec|recformat|car|assert(|2|3)|local|exists|forall|require|requirerange|requirege|import|assigned|save|restore|quit|iload|printf|fprintf|exit|read|readi|time|forward|error|clear|vprint|vprintf|vtime|func|declare|attributes|verbose|eval)\b</string>
 			<key>name</key>
 			<string>keyword.function.statement</string>
 		</dict>
