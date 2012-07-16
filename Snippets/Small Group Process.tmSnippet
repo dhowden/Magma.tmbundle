@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:P} := SmallGroupProcess($2);
+	<string>${1:P} := ${2|SmallGroup,TransitiveGroup|}Process($3);
 repeat
-	${3:G} := Current($1);
-	$4
+	${4:G} := Current($1);
+	$5
 	Advance(~$1);
 until IsEmpty($1);</string>
 	<key>name</key>
@@ -14,7 +14,7 @@ until IsEmpty($1);</string>
 	<key>scope</key>
 	<string>source.magma</string>
 	<key>tabTrigger</key>
-	<string>sgp</string>
+	<string>gp</string>
 	<key>uuid</key>
 	<string>57ED06C4-6C12-447B-A835-D96E8F29B98A</string>
 </dict>
