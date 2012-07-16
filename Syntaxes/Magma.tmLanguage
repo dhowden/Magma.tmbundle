@@ -314,6 +314,10 @@
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>include</key>
+					<string>$base</string>
+				</dict>
+				<dict>
 					<key>match</key>
 					<string>[A-Za-z_][A-Za-z0-9_]*</string>
 					<key>name</key>
@@ -348,6 +352,10 @@
 			<string>meta.support.import</string>
 			<key>patterns</key>
 			<array>
+				<dict>
+					<key>include</key>
+					<string>$base</string>
+				</dict>
 				<dict>
 					<key>match</key>
 					<string>[A-Za-z_][A-Za-z0-9_]*</string>
