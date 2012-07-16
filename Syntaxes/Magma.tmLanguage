@@ -258,6 +258,30 @@
 			<string>meta.support.declare.verbose</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.function.statement</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.function.statement</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>support.type.category.magma</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b(declare)\s+(type)\s*([A-Za-z_][A-Za-z0-9_]*)</string>
+			<key>name</key>
+			<string>meta.support.declare.type</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>\b(declare)\s+(attributes)\s+([A-Za-z_][A-Za-z0-9_]*)\s*(:)\s*</string>
 			<key>beginCaptures</key>
