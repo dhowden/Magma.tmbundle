@@ -564,7 +564,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\b(intrinsic)\b\s*([A-Za-z_][A-Za-z0-9_]*)\b</string>
+			<string>\b(intrinsic)\b\s*([A-Za-z_][A-Za-z0-9_]*)?\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
