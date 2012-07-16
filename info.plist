@@ -7,7 +7,7 @@
 	<key>contactName</key>
 	<string>David Howden</string>
 	<key>description</key>
-	<string></string>
+	<string>Support for the &lt;a href="http://magma.maths.usyd.edu.au"&gt;Magma&lt;/a&gt; computational algebra system.</string>
 	<key>mainMenu</key>
 	<dict>
 		<key>items</key>
