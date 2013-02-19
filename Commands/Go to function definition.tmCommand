@@ -5,7 +5,10 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string># lookup_function
+	<string>#!/usr/bin/env bash
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+
+# lookup_function
 # Paramters:
 #   function_name
 #   file_name
@@ -49,10 +52,6 @@ function follow_load_statements {
     done
 }
 
-
-SEARCH_FILES=( "$TM_FILEPATH" )
-follow_load_statements "$TM_CURRENT_WORD" "$SEARCH_FILES"
-
 # 
 # follow_import_statments
 # 
@@ -63,8 +62,7 @@ function follow_import_statements {
 	local SEARCH_FILES=$2
     for search_file in ${SEARCH_FILES[@]}
     do
-        local FILES=(`grep '^import\&gt;' "$search_file" | awk '{print $2}' | sed -n -e 's_"\([^\"]*\)"\s*:_\1_p'`)
-
+        local FILES=(`grep '^import\&gt;.*:.*"$1"' "$search_file" | awk '{print $2}' | sed -n -e 's_"\([^\"]*\)"\s*_\1_p'`)
         for file in ${FILES[@]}
         do
             lookup_function $1 "$TM_DIRECTORY"'/'"$file"
@@ -76,8 +74,9 @@ function follow_import_statements {
 
 
 SEARCH_FILES=( "$TM_FILEPATH" )
+# Follow the import statements first as these indicate that the function is in the import
 follow_import_statements "$TM_CURRENT_WORD" "$SEARCH_FILES"
-
+follow_load_statements "$TM_CURRENT_WORD" "$SEARCH_FILES"
 
 # Did not find the function in the current file or loaded/imported files, notify user
 echo 'Could not find '"$TM_CURRENT_WORD"' in the current file'
@@ -85,15 +84,23 @@ echo 'Could not find '"$TM_CURRENT_WORD"' in the current file'
 </string>
 	<key>input</key>
 	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>@d</string>
 	<key>name</key>
 	<string>Go to function definition</string>
-	<key>output</key>
-	<string>showAsTooltip</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
 	<key>scope</key>
 	<string>meta.function-call.magma</string>
 	<key>uuid</key>
 	<string>6B53E759-9D4B-4AB4-9645-3A8B11BC6108</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
