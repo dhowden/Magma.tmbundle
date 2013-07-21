@@ -22,6 +22,10 @@
 				<string>[</string>
 				<string>]</string>
 			</array>
+			<array>
+				<string>&lt;</string>
+				<string>/&gt;(?&lt;!-&gt;)/</string>
+			</array>
 		</array>
 		<key>smartTypingPairs</key>
 		<array>
