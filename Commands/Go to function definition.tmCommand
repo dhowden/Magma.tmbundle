@@ -31,9 +31,9 @@ function lookup_function {
 # look in the the current file
 lookup_function "$TM_CURRENT_WORD" "$TM_FILEPATH"
 
-# 
+#
 # follow_load_statments
-# 
+#
 # Parameters:
 #   word
 #   file_array
@@ -47,14 +47,13 @@ function follow_load_statements {
         do
             lookup_function $1 "$TM_DIRECTORY"'/'"$file"
         done
-        
         follow_load_statements "$FILES"
     done
 }
 
-# 
+#
 # follow_import_statments
-# 
+#
 # Parameters:
 #   word
 #   file_array
@@ -67,7 +66,6 @@ function follow_import_statements {
         do
             lookup_function $1 "$TM_DIRECTORY"'/'"$file"
         done
-        
         follow_import_statements "$FILES"
     done
 }
@@ -80,16 +78,15 @@ follow_load_statements "$TM_CURRENT_WORD" "$SEARCH_FILES"
 
 # Did not find the function in the current file or loaded/imported files, notify user
 echo 'Could not find '"$TM_CURRENT_WORD"' in the current file'
-
 </string>
 	<key>input</key>
 	<string>none</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>@d</string>
+	<string>~$@</string>
 	<key>name</key>
-	<string>Go to function definition</string>
+	<string>Go to Function Definition</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>

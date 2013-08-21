@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>end if;
-$1</string>
+	<string>end if;$1</string>
 	<key>name</key>
 	<string>End If Statement</string>
 	<key>scope</key>

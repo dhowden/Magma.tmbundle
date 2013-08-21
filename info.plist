@@ -25,6 +25,7 @@
 			<string>98624277-F1C9-443E-9AD3-A7BFAA22C12A</string>
 			<string>82A71D7A-BBDE-4F8D-A747-50F25CDB5FAE</string>
 			<string>6A0FDC7C-DC2D-4A61-9934-6C28CCC4C933</string>
+			<string>5DA0E4C5-FC19-4ACE-A893-6E2BFFCC1105</string>
 			<string>------------------------------------</string>
 			<string>2C8944C5-AE78-444D-8393-9DD7E91BED1C</string>
 		</array>
@@ -98,6 +99,16 @@
 				</array>
 				<key>name</key>
 				<string>Directives</string>
+			</dict>
+			<key>5DA0E4C5-FC19-4ACE-A893-6E2BFFCC1105</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>5DA25C13-6385-4799-AE74-FA236B1AFE90</string>
+					<string>8430ED92-6EB3-45E3-B5C5-644980BE04B8</string>
+				</array>
+				<key>name</key>
+				<string>Debugging</string>
 			</dict>
 		</dict>
 	</dict>

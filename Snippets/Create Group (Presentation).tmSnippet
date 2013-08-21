@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:G}&lt;$2&gt; := Group&lt;$2 | $3&gt;;
-$4</string>
+	<string>${1:G}&lt;$2&gt; := Group&lt;$2 | $3&gt;;</string>
 	<key>name</key>
 	<string>Create Group (Presentation)</string>
 	<key>scope</key>

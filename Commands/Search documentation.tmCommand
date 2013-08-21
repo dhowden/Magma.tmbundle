@@ -5,21 +5,32 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+	<string>#!/usr/bin/env bash
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+
+. "$TM_SUPPORT_PATH/lib/webpreview.sh"
 open http://magma.maths.usyd.edu.au/magma/handbook/search?intrinsics=1\&amp;query="$TM_CURRENT_WORD" &amp;&gt;/dev/null &amp;
 exit 0
 </string>
 	<key>input</key>
 	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>@d</string>
+	<string>^h</string>
 	<key>name</key>
-	<string>Search documentation</string>
-	<key>output</key>
+	<string>Search Documentation</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
 	<string>discard</string>
 	<key>scope</key>
 	<string>support.function.magma</string>
 	<key>uuid</key>
 	<string>7B3CC094-DD65-4B4E-A7C2-B168F2D371A8</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>

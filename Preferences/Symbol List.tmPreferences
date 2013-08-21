@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Symbol List</string>
 	<key>scope</key>
-	<string>entity.name.function.call, entity.name.function.import, entity.name.function.forward</string>
+	<string>entity.name.function.call.magma, entity.name.function.import, entity.name.function.forward.magma</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>
