@@ -470,7 +470,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(by|to|eq|not|lt|gt|le|ge|cmpeq|cmpne|mod|is|or|xor|(\&amp;)?and|in|notin|delete|div|cat|join|subset|notsubset|meet|diff|sdiff|ne)\b|((\&amp;)?\*|\^|(\&amp;)?\+|\-|#|\||&lt;|&gt;|:=|@|@@|:|\.\.)|\&amp;(or|and|cat|join|meet)\b</string>
+			<string>\b(by|to|eq|not|lt|gt|le|ge|cmpeq|cmpne|mod|is|or|xor|(\&amp;)?and|in|notin|delete|div|cat|join|subset|notsubset|meet|diff|sdiff|ne)\b|((\&amp;)?\*|\^|(\&amp;)?\+|\-|#|\||&lt;|&gt;|:=|@|@@|:|\.\.|\!|\!\!)|\&amp;(or|and|cat|join|meet)\b</string>
 			<key>name</key>
 			<string>keyword.operator</string>
 		</dict>
@@ -564,7 +564,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\b(intrinsic)\b\s*('((eq|lt|gt|le|ge|mod|in|notin|div|cat|join|subset|notsubset|meet|diff|sdiff|ne)\b|(\*|\^|\+|\-|#|\||@|@@|\/))'|([A-Za-z_][A-Za-z0-9_]*\b))?</string>
+			<string>\b(intrinsic)\b\s*('((eq|lt|gt|le|ge|mod|in|notin|div|cat|join|subset|notsubset|meet|diff|sdiff|ne)\b|(\*|\^|\+|\-|#|\||@|@@|\/|\!|\!\!))'|([A-Za-z_][A-Za-z0-9_]*\b))?</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
