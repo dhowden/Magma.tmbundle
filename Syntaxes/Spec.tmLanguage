@@ -14,7 +14,7 @@
 			<key>match</key>
 			<string>\+\w+\b</string>
 			<key>name</key>
-			<string>keyword.control.include-spec</string>
+			<string>keyword.control.include-spec.magma</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

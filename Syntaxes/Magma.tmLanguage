@@ -154,13 +154,13 @@
 			<key>match</key>
 			<string>~([A-Za-z_][A-Za-z0-9_]*)\b</string>
 			<key>name</key>
-			<string>variable.reference</string>
+			<string>variable.reference.magma</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>`([A-Za-z_][A-Za-z0-9_]*)\b</string>
 			<key>name</key>
-			<string>variable.attribute</string>
+			<string>variable.attribute.magma</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -168,17 +168,17 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.function.statement</string>
+					<string>keyword.function.statement.magma</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.operator</string>
+					<string>keyword.operator.magma</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>variable</string>
+					<string>variable.magma</string>
 				</dict>
 			</dict>
 			<key>match</key>
@@ -194,12 +194,12 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.function.statement</string>
+					<string>keyword.function.statement.magma</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.operator</string>
+					<string>keyword.operator.magma</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -218,18 +218,18 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>variable.record.fieldname</string>
+							<string>variable.record.fieldname.magma</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.operator</string>
+							<string>keyword.operator.magma</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>([A-Za-z_][A-Za-z0-9_]*)\s*(:)</string>
 					<key>name</key>
-					<string>meta.support.recordvariable.declaration</string>
+					<string>meta.support.recordvariable.declaration.magma</string>
 				</dict>
 			</array>
 		</dict>
@@ -239,23 +239,23 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.function.statement</string>
+					<string>keyword.function.statement.magma</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.function.statement</string>
+					<string>keyword.function.statement.magma</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>support.type.verbose.flag.declare</string>
+					<string>support.type.verbose.flag.declare.magma</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>\b(declare)\s+(verbose)\s*([A-Za-z_][A-Za-z0-9_]*)</string>
 			<key>name</key>
-			<string>meta.support.declare.verbose</string>
+			<string>meta.support.declare.verbose.magma</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -263,12 +263,12 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.function.statement</string>
+					<string>keyword.function.statement.magma</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.function.statement</string>
+					<string>keyword.function.statement.magma</string>
 				</dict>
 				<key>3</key>
 				<dict>
@@ -279,7 +279,7 @@
 			<key>match</key>
 			<string>\b(declare)\s+(type)\s*([A-Za-z_][A-Za-z0-9_]*)</string>
 			<key>name</key>
-			<string>meta.support.declare.type</string>
+			<string>meta.support.declare.type.magma</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -289,12 +289,12 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.function.statement</string>
+					<string>keyword.function.statement.magma</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.function.statement</string>
+					<string>keyword.function.statement.magma</string>
 				</dict>
 				<key>3</key>
 				<dict>
@@ -304,13 +304,13 @@
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.operator</string>
+					<string>keyword.operator.magma</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>;</string>
 			<key>name</key>
-			<string>meta.support.declare.attributes</string>
+			<string>meta.support.declare.attributes.magma</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -321,7 +321,7 @@
 					<key>match</key>
 					<string>[A-Za-z_][A-Za-z0-9_]*</string>
 					<key>name</key>
-					<string>variable.attribute</string>
+					<string>variable.attribute.magma</string>
 				</dict>
 			</array>
 		</dict>
@@ -333,7 +333,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.function.statement</string>
+					<string>keyword.function.statement.magma</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -343,13 +343,13 @@
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.operator</string>
+					<string>keyword.operator.magma</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>;</string>
 			<key>name</key>
-			<string>meta.support.import</string>
+			<string>meta.support.import.magma</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -360,7 +360,7 @@
 					<key>match</key>
 					<string>[A-Za-z_][A-Za-z0-9_]*</string>
 					<key>name</key>
-					<string>entity.name.function.import</string>
+					<string>entity.name.function.import.magma</string>
 				</dict>
 			</array>
 		</dict>
@@ -372,20 +372,20 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.function.statement</string>
+					<string>keyword.function.statement.magma</string>
 				</dict>
 			</dict>
 			<key>end</key>
 			<string>;</string>
 			<key>name</key>
-			<string>meta.support.forward</string>
+			<string>meta.support.forward.magma</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>match</key>
 					<string>[A-Za-z_][A-Za-z0-9_]*</string>
 					<key>name</key>
-					<string>entity.name.function.forward</string>
+					<string>entity.name.function.forward.magma</string>
 				</dict>
 			</array>
 		</dict>
@@ -395,18 +395,18 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.verbose</string>
+					<string>keyword.verbose.magma</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>support.type.verbose.flag</string>
+					<string>support.type.verbose.flag.magma</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>\b(vprint(f)?)\s+([A-Za-z][A-Za-z0-9]*)</string>
 			<key>name</key>
-			<string>meta.support.function.statement.vprint</string>
+			<string>meta.support.function.statement.vprint.magma</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -414,24 +414,24 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.verbose</string>
+					<string>keyword.verbose.magma</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>support.type.verbose.flag</string>
+					<string>support.type.verbose.flag.magma</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>\b(vtime)\s+([A-Za-z][A-Za-z0-9]*)</string>
 			<key>name</key>
-			<string>meta.support.function.statement.vtime</string>
+			<string>meta.support.function.statement.vtime.magma</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(print|hom|quo|map|pmap|iso|sub|freeze|rec|recformat|car|assert(|2|3)|local|exists|forall|require|requirerange|requirege|import|assigned|save|restore|quit|iload|printf|fprintf|exit|read|readi|time|forward|error|clear|vprint|vprintf|vtime|func|declare|attributes|verbose|eval)\b</string>
 			<key>name</key>
-			<string>keyword.function.statement</string>
+			<string>keyword.function.statement.magma</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -441,7 +441,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>support.function.load</string>
+					<string>support.function.load.magma</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -460,7 +460,7 @@
 			<key>match</key>
 			<string>\[(\*|)|(\*|)\]|\{(@|!|\*|)|(@|!|\*|)\}</string>
 			<key>name</key>
-			<string>storage.type</string>
+			<string>storage.type.magma</string>
 		</dict>
 		<dict>
 			<key>match</key>
@@ -472,13 +472,13 @@
 			<key>match</key>
 			<string>\b(by|to|eq|not|lt|gt|le|ge|cmpeq|cmpne|mod|is|or|xor|(\&amp;)?and|in|notin|delete|div|cat|join|subset|notsubset|meet|diff|sdiff|ne)\b|((\&amp;)?\*|\^|(\&amp;)?\+|\-|#|\||&lt;|&gt;|:=|@|@@|:|\.\.|\!|\!\!)|\&amp;(or|and|cat|join|meet)\b</string>
 			<key>name</key>
-			<string>keyword.operator</string>
+			<string>keyword.operator.magma</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(end )?(if|then|elif|else|while|for|return|where|do|select|when|repeat|until|break|continue|try|catch)\b</string>
 			<key>name</key>
-			<string>keyword.control</string>
+			<string>keyword.control.magma</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -524,17 +524,17 @@
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.definition</string>
+					<string>entity.name.function.definition.magma</string>
 				</dict>
 				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.definition</string>
+					<string>entity.name.function.definition.magma</string>
 				</dict>
 				<key>7</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.operator</string>
+					<string>keyword.operator.magma</string>
 				</dict>
 				<key>8</key>
 				<dict>
@@ -580,12 +580,12 @@
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>variable</string>
+					<string>variable.magma</string>
 				</dict>
 				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.operator</string>
+					<string>keyword.operator.magma</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -610,11 +610,11 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>comment.intrinsic</string>
+							<string>comment.intrinsic.magma</string>
 						</dict>
 					</dict>
 					<key>contentName</key>
-					<string>comment.intrinsic</string>
+					<string>comment.intrinsic.magma</string>
 					<key>end</key>
 					<string>\}</string>
 					<key>endCaptures</key>
@@ -622,7 +622,7 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>comment.intrinsic</string>
+							<string>comment.intrinsic.magma</string>
 						</dict>
 					</dict>
 				</dict>
