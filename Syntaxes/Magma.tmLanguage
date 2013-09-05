@@ -644,7 +644,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.function.call</string>
+					<string>entity.name.function.call.magma</string>
 				</dict>
 			</dict>
 			<key>match</key>
