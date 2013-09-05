@@ -564,7 +564,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\b(intrinsic)\b\s*('((eq|lt|gt|le|ge|mod|in|notin|div|cat|join|subset|notsubset|meet|diff|sdiff|ne)\b|(\*|\^|\+|\-|#|\||@|@@|\/|\!|\!\!))'|([A-Za-z_][A-Za-z0-9_]*\b))?</string>
+			<string>\b(intrinsic)\b\s*('(eq|lt|gt|le|ge|mod|in|notin|div|cat|join|subset|notsubset|meet|diff|sdiff|ne|\*|\^|\+|\-|#|\||@|@@|\/|\!|\!\!)'|([A-Za-z_][A-Za-z0-9_]*\b))?</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
